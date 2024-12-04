@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+ <head>
+
+   <meta charset="UTF-8" />
+
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+   <title>The Turtle Shelter Project</title>
+
+   <link rel="stylesheet" href="/styles/styles.css">
+
+ </head>
+
+ <body>
+
+   <div class="nav-menu">
+
+     <header>
+
+       <a href="index.html"><h1>Turtle Shelter Project</h1></a>
+
+       <nav>
+
+         <ul>
+
+           <li><a href="sign-up.html">Volunteer</a></li>
+
+           <li><a href="jen.html">Jen's Story</a></li>
+
+           <li><a href="impact.html">Our Impact</a></li>
+
+           <li><a href="about.html">About</a></li>
+
+           <li><a href="donate.html">Donate</a></li>
+
+           <button>
+
+             <li><a href="#admin login">Admin Login</a></li>
+
+           </button>
+
+         </ul>
+
+       </nav>
+
+     </header>
+
+   </div>
+
+
+   <!-- Volunteer Form -->
+   <div class="volunteer-form">
+
+     <h3>Sign up to volunteer with us!</h3>
+
+     <h2>Volunteer Signup Form</h2>
+
+     <h3>Contact Information</h3>
+
+     <form action="/addVolunteer" method="post">
+
+
+       <!-- Contact Info -->
+
+       <br>
+       <label for="VolFirstName">First Name</label>
+       <input type="text" id="VolFirstName" name="VolFirstName" required oninput="this.value = this.value.toUpperCase()"/>
+
+       <br>
+       <label for="VolLastName">Last Name</label>
+       <input type="text" id="VolLastName" name="VolLastName" required oninput="this.value = this.value.toUpperCase()"/>
+
+       <br>
+       <label for="Email">Email</label>
+       <input type="email" id="Email" name="Email" required/>
+
+       <br>
+       <label for="Phone">Phone</label>
+       <input type="tel" id="Phone" name="Phone" required/>
+
+       <br>
+       <label for ="VolCity">City</label>
+       <input type="text" id="VolCity" name="VolCity" required/>
+
+       <br>
+       <label for ="VolCounty">County</label>
+       <input type="text" id="VolCounty" name="VolCounty" required/>
+
+       <br>
+       <label for ="VolState">State</label>
+       <input type="text" id="VolState" name="VolState" required/>
+
+  
+       <!-- How they heard about the opportunity -->
+
+       <br>
+       <label for="ReferralID">How did you hear about us?</label>
+        <select id="ReferralID" name="ReferralID" required>
+        <% Referral.forEach(Referral => { %>
+        <option value="<%= Referral.ReferralID %>">
+          <%= Referral.ReferralName %>
+        </option>
+        <% }) %>
+        </select>
+
+        <!-- Sewing Level -->
+       <br>
+       <label>Sewing Level</label>
+        <label> <input type="radio" name="SewingLevel" value="B" checked> Beginner</label>
+        <label> <input type="radio" name="SewingLevel" value="I" > Intermediate</label>
+        <label> <input type="radio" name="SewingLevel" value="E" > Expert</label>
+
+
+       <!-- Hours willing to volunteer -->
+       <br>
+       <label for="HoursPerMonth">Number of hours willing to volunteer per month</label>
+        <input type="number" id="HoursPerMonth" name="HoursPerMonth" placeholder="Enter # of hours" min="1" required/>
+
+        <br>
+        <button type="submit">Submit</button>
+
+     </form>
+
+   </div>
+
+   <footer>
+
+     &copy; 2024 The Turtle Shelter Project | turtleshelterproject@gmail.com |
+
+     801-872-3190
+
+   </footer>
+
+ </body>
+
+</html>

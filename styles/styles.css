@@ -1,0 +1,443 @@
+/*External Landing Page*/
+
+
+.nav-menu a {
+
+    text-decoration: none;
+   
+    color: white;
+   
+   }
+   
+   
+   .nav-menu nav {
+   
+    background-color: #333;
+   
+    color: white;
+   
+    padding: 10px 15px;
+   
+   }
+   
+   
+   .nav-menu ul {
+   
+    list-style: none;
+   
+    margin: 0;
+   
+    padding: 0;
+   
+    display: flex;
+   
+   }
+   
+   
+   .nav-menu ul li {
+   
+    margin-right: 15px;
+   
+   }
+   
+   
+   .nav-menu ul li a {
+   
+    color: white;
+   
+    text-decoration: none;
+   
+    padding: 5px 10px;
+   
+    transition: background-color 0.3s;
+   
+   }
+   
+   
+   .nav-menu ul li a:hover {
+   
+    background-color: #555;
+   
+    border-radius: 4px;
+   
+   }
+   
+   
+   body {
+   
+    font-family: Arial, sans-serif;
+   
+    margin: 0;
+   
+    padding: 0;
+   
+    display: flex;
+   
+    flex-direction: column;
+   
+    min-height: 100vh;
+   
+   }
+   
+   
+   /* Header */
+   
+   header {
+   
+    background-color: #333;
+   
+    color: white;
+   
+    padding: 15px;
+   
+    display: flex;
+   
+    justify-content: space-between;
+   
+    align-items: center;
+   
+   }
+   
+   
+   header h1 {
+   
+    margin: 0;
+   
+    font-size: 1.5rem;
+   
+   }
+   
+   
+   header button {
+   
+    background-color: #f44336;
+   
+    color: white;
+   
+    border: none;
+   
+    padding: 10px 20px;
+   
+    cursor: pointer;
+   
+    border-radius: 4px;
+   
+   }
+   
+   
+   header button:hover {
+   
+    background-color: #d32f2f;
+   
+   }
+   
+   
+   /* Main layout */
+   
+   .dashboard {
+   
+    display: flex;
+   
+    flex: 1;
+   
+   }
+   
+   
+   /* Sidebar */
+   
+   .dashboard nav {
+   
+    background-color: #444;
+   
+    color: white;
+   
+    width: 200px;
+   
+    padding: 20px;
+   
+    height: 100%;
+   
+   }
+   
+   
+   .dashboard nav ul {
+   
+    list-style: none;
+   
+    padding: 0;
+   
+   }
+   
+   
+   .dashboard nav ul li {
+   
+    margin: 20px 0;
+   
+   }
+   
+   
+   .dashboard nav ul li a {
+   
+    color: white;
+   
+    text-decoration: none;
+   
+    font-size: 1.1rem;
+   
+   }
+   
+   
+   .dashboard nav ul li a:hover {
+   
+    text-decoration: underline;
+   
+   }
+   
+   
+   /* Content Area */
+   
+   .content {
+   
+    flex: 1;
+   
+    padding: 20px;
+   
+   }
+   
+   
+   .content h2 {
+   
+    margin-top: 0;
+   
+   }
+   
+   
+   .stats {
+   
+    display: flex;
+   
+    gap: 20px;
+   
+   }
+   
+   
+   .stat {
+   
+    flex: 1;
+   
+    background-color: #f4f4f4;
+   
+    padding: 15px;
+   
+    border-radius: 8px;
+   
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+   
+    text-align: center;
+   
+   }
+   
+   
+   .stat h3 {
+   
+    margin: 0;
+   
+    color: #333;
+   
+   }
+   
+   
+   .stat p {
+   
+    font-size: 1.2rem;
+   
+    margin: 10px 0 0;
+   
+   }
+   
+   
+   /* Footer */
+   
+   footer {
+   
+    background-color: #333;
+   
+    color: white;
+   
+    text-align: center;
+   
+    padding: 10px;
+   
+    margin-top: auto;
+   
+   }
+   
+   
+   /*sign-up page*/
+   
+   /*volunteer form*/
+   
+   .volunteer-form form {
+   
+    background: white;
+   
+    padding: 20px;
+   
+    border-radius: 8px;
+   
+    max-width: 500px;
+   
+    margin: auto;
+   
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+   
+   }
+   
+   
+   .volunteer-form h2 {
+   
+    text-align: center;
+   
+    color: #333;
+   
+   }
+   
+   
+   .volunteer-form label {
+   
+    display: block;
+   
+    margin: 10px 0 5px;
+   
+    font-weight: bold;
+   
+   }
+   
+   
+   .volunteer-form input,
+   
+   .volunteer-form select,
+   
+   .volunteer-form textarea,
+   
+   .volunteer-form button {
+   
+    width: 100%;
+   
+    padding: 10px;
+   
+    margin-bottom: 15px;
+   
+    border: 1px solid #ccc;
+   
+    border-radius: 4px;
+   
+    font-size: 1rem;
+   
+   }
+   
+   
+   .volunteer-form button {
+   
+    background-color: #007bff;
+   
+    color: white;
+   
+    border: none;
+   
+    cursor: pointer;
+   
+   }
+   
+   
+   .volunteer-form button:hover {
+   
+    background-color: #0056b3;
+   
+   }
+   
+   
+   /*Event request form*/
+   
+   .event-request form {
+   
+    background: white;
+   
+    padding: 20px;
+   
+    border-radius: 8px;
+   
+    max-width: 600px;
+   
+    margin: auto;
+   
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+   
+   }
+   
+   
+   .event-request h2 {
+   
+    text-align: center;
+   
+    color: #333;
+   
+   }
+   
+   
+   .event-request label {
+   
+    display: block;
+   
+    margin: 10px 0 5px;
+   
+    font-weight: bold;
+   
+   }
+   
+   
+   .event-request input,
+   
+   .event-request select,
+   
+   .event-request textarea,
+   
+   .event-request button {
+   
+    width: 100%;
+   
+    padding: 10px;
+   
+    margin-bottom: 15px;
+   
+    border: 1px solid #ccc;
+   
+    border-radius: 4px;
+   
+    font-size: 1rem;
+   
+   }
+   
+   
+   .event-request button {
+   
+    background-color: #007bff;
+   
+    color: white;
+   
+    border: none;
+   
+    cursor: pointer;
+   
+   }
+   
+   
+   .event-request button:hover {
+   
+    background-color: #0056b3;
+   
+   }
+   
+   
+   
+   

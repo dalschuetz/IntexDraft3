@@ -1,0 +1,147 @@
+  <!DOCTYPE html>
+
+  <html lang="en">
+  
+   <head>
+  
+     <meta charset="UTF-8" />
+  
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+     <title>The Turtle Shelter Project</title>
+  
+     <link rel="stylesheet" href="/styles/styles.css">
+  
+   </head>
+  
+   <body>
+  
+     <div class="nav-menu">
+  
+       <header>
+  
+         <a href="index.html"><h1>Turtle Shelter Project</h1></a>
+  
+         <nav>
+  
+           <ul>
+  
+             <li><a href="sign-up.html">Volunteer</a></li>
+  
+             <li><a href="jen.html">Jen's Story</a></li>
+  
+             <li><a href="impact.html">Our Impact</a></li>
+  
+             <li><a href="about.html">About</a></li>
+  
+             <li><a href="donate.html">Donate</a></li>
+  
+             <button>
+  
+               <li><a href="#admin login">Admin Login</a></li>
+  
+             </button>
+  
+           </ul>
+  
+         </nav>
+  
+       </header>
+  
+     </div>
+  
+  
+     <!-- Event Request Form -->
+     <h2>Event Request Form</h2>
+
+<div class="event-request">
+
+    <form action="/addEvent" method="post">
+      <!-- Attendance Estimate -->
+      <label for="EstimatedAttendance">How many people will be there? (rough estimate)</label>
+      <input type="number" id="EstimatedAttendance" name="EstimatedAttendance" required/>
+
+
+      <!-- Event Type -->
+      <br>
+      <label>Would you like to do sewing, non-sewing, or both?</label>
+        <label>
+          <input type="radio" name="EventType" value="S" > Sewing
+        </label>
+        <label>
+          <input type="radio" name="EventType" value="N" checked> Non-Sewing
+        </label>
+        <label>
+          <input type="radio" name="EventType" value="B"> Both
+        </label>
+
+      <!-- Event Address -->
+      <br>
+      <label for="EventStreetAddress">What is the address of the event?</label>
+      <input type="text" id="EventStreetAddress" name="EventStreetAddress" required></input>
+
+      <!-- City -->
+      <br>
+      <label for="EventCity">What is the city of the event?</label>
+      <input type="text" id="EventCity" name="EventCity" required/>
+      
+      <!-- State -->
+      <br>
+      <label for="EventState">What is the state of the event?</label>
+      <input type="text" id="EventState" name="EventState" required/>
+
+      <!-- Event Duration -->
+      <br>
+      <label for="Duration">How long would you like the event to go?</label>
+      <input type="text" id="Duration" name="Duration" required/>
+
+      <!-- Time -->
+      <br>
+      <label for="StartTime">What time do you want the event to start?</label>
+      <input type="text" id="StartTime" name="StartTime" required/>
+
+      <!-- 1st Choice -->
+      <br>
+      <label for="FirstChoiceDate">What date would you like to schedule the event?</label>
+      <input type="date" id="FirstChoiceDate" name="FirstChoiceDate" required />
+
+      <!-- 2nd Choice -->
+      <br>
+      <label for="SecondChoiceDate">What is another date you could schedule the event?</label>
+      <input type="date" id="SecondChoiceDate" name="SecondChoiceDate"/>
+
+      <!-- 3rd Choice -->
+      <br>
+      <label for="ThirdChoiceDate">What is another date you could schedule the event?</label>
+      <input type="date" id="ThirdChoiceDate" name="ThirdChoiceDate"/>
+
+      <!-- Jen's Story -->
+      <br>
+      <label for="JenStoryShare">Would you like Jen to share her story?</label>
+      <input type="checkbox" id="JenStoryShare" name="JenStoryShare" value="true">
+
+      <!-- Contact Info -->
+      <br>
+      <label for="ContactInfo">What is a good contact name and phone number for the event?</label>
+      <input type="text" id="ContactFirstName" name="ContactFirstName" placeholder="Contact First Name" required/>
+      <input type="text" id="ContactLastName" name="ContactLastName" placeholder="Contact Last Name" required/>
+      <input type="tel" id="ContactPhone" name="ContactPhone" placeholder="Contact Phone Number" required/>
+      <input type="email" id="ContactEmail" name="ContactEmail" placeholder="Contact Email" required/>
+
+      <button type="submit">Submit</button>
+
+    </form>
+
+  </div>
+  
+     <footer>
+  
+       &copy; 2024 The Turtle Shelter Project | turtleshelterproject@gmail.com |
+  
+       801-872-3190
+  
+     </footer>
+  
+   </body>
+  
+  </html>
